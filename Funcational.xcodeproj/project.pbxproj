@@ -29,6 +29,11 @@
 		8469B87C1FA7130900B9A1A1 /* Maybe+Monad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469B87B1FA7130900B9A1A1 /* Maybe+Monad.swift */; };
 		8469B87E1FA7132400B9A1A1 /* Maybe+Applicative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469B87D1FA7132400B9A1A1 /* Maybe+Applicative.swift */; };
 		8469B8801FA7133400B9A1A1 /* Maybe+Alternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469B87F1FA7133400B9A1A1 /* Maybe+Alternative.swift */; };
+		8469B8831FA7750400B9A1A1 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469B8821FA7750400B9A1A1 /* Reader.swift */; };
+		84BC3BF61FA80972000BDB20 /* Try.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC3BF51FA80972000BDB20 /* Try.swift */; };
+		84BC3BF91FA80C00000BDB20 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC3BF81FA80C00000BDB20 /* ResultProtocol.swift */; };
+		84BC3BFB1FA80C6E000BDB20 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC3BFA1FA80C6E000BDB20 /* Result.swift */; };
+		84BC3BFD1FA80DA3000BDB20 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC3BFC1FA80DA3000BDB20 /* AnyError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,11 @@
 		8469B87B1FA7130900B9A1A1 /* Maybe+Monad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maybe+Monad.swift"; sourceTree = "<group>"; };
 		8469B87D1FA7132400B9A1A1 /* Maybe+Applicative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maybe+Applicative.swift"; sourceTree = "<group>"; };
 		8469B87F1FA7133400B9A1A1 /* Maybe+Alternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maybe+Alternative.swift"; sourceTree = "<group>"; };
+		8469B8821FA7750400B9A1A1 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		84BC3BF51FA80972000BDB20 /* Try.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try.swift; sourceTree = "<group>"; };
+		84BC3BF81FA80C00000BDB20 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
+		84BC3BFA1FA80C6E000BDB20 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		84BC3BFC1FA80DA3000BDB20 /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +169,9 @@
 		8469B85F1FA7109100B9A1A1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				84BC3BF71FA80B9A000BDB20 /* Result */,
+				84BC3BF41FA80967000BDB20 /* Try */,
+				8469B8811FA774F700B9A1A1 /* Reader */,
 				8469B8761FA7129700B9A1A1 /* Maybe */,
 				8469B8641FA7125300B9A1A1 /* Array */,
 				8469B8691FA7125300B9A1A1 /* Optional */,
@@ -200,6 +213,32 @@
 				8469B87F1FA7133400B9A1A1 /* Maybe+Alternative.swift */,
 			);
 			path = Maybe;
+			sourceTree = "<group>";
+		};
+		8469B8811FA774F700B9A1A1 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				8469B8821FA7750400B9A1A1 /* Reader.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		84BC3BF41FA80967000BDB20 /* Try */ = {
+			isa = PBXGroup;
+			children = (
+				84BC3BF51FA80972000BDB20 /* Try.swift */,
+			);
+			path = Try;
+			sourceTree = "<group>";
+		};
+		84BC3BF71FA80B9A000BDB20 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				84BC3BF81FA80C00000BDB20 /* ResultProtocol.swift */,
+				84BC3BFA1FA80C6E000BDB20 /* Result.swift */,
+				84BC3BFC1FA80DA3000BDB20 /* AnyError.swift */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BC3BF91FA80C00000BDB20 /* ResultProtocol.swift in Sources */,
 				8469B8701FA7125300B9A1A1 /* Array+Functor.swift in Sources */,
 				8469B8711FA7125300B9A1A1 /* Array+Monad.swift in Sources */,
 				8469B8731FA7125300B9A1A1 /* Optional+Applicative.swift in Sources */,
@@ -346,11 +386,15 @@
 				8469B8801FA7133400B9A1A1 /* Maybe+Alternative.swift in Sources */,
 				8469B8631FA7116300B9A1A1 /* Operators.swift in Sources */,
 				8459E0CE1FA6F107000283A0 /* ViewController.swift in Sources */,
+				84BC3BFD1FA80DA3000BDB20 /* AnyError.swift in Sources */,
 				8469B86E1FA7125300B9A1A1 /* Array+Alternative.swift in Sources */,
+				84BC3BF61FA80972000BDB20 /* Try.swift in Sources */,
 				8469B87E1FA7132400B9A1A1 /* Maybe+Applicative.swift in Sources */,
+				8469B8831FA7750400B9A1A1 /* Reader.swift in Sources */,
 				8469B8721FA7125300B9A1A1 /* Optional+Alternative.swift in Sources */,
 				8469B8781FA712B500B9A1A1 /* Maybe.swift in Sources */,
 				8459E0CC1FA6F107000283A0 /* AppDelegate.swift in Sources */,
+				84BC3BFB1FA80C6E000BDB20 /* Result.swift in Sources */,
 				8469B8611FA710AB00B9A1A1 /* Curry.swift in Sources */,
 				8469B8741FA7125300B9A1A1 /* Optional+Functor.swift in Sources */,
 			);
