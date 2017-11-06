@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84200D911FAC50BA00E5471F /* Result+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84200D901FAC50BA00E5471F /* Result+File.swift */; };
 		8459E0CC1FA6F107000283A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459E0CB1FA6F107000283A0 /* AppDelegate.swift */; };
 		8459E0CE1FA6F107000283A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459E0CD1FA6F107000283A0 /* ViewController.swift */; };
 		8459E0D11FA6F107000283A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8459E0CF1FA6F107000283A0 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84200D901FAC50BA00E5471F /* Result+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+File.swift"; sourceTree = "<group>"; };
 		8459E0C81FA6F107000283A0 /* Funcational.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Funcational.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8459E0CB1FA6F107000283A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8459E0CD1FA6F107000283A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			children = (
 				84BC3BF81FA80C00000BDB20 /* ResultProtocol.swift */,
 				84BC3BFA1FA80C6E000BDB20 /* Result.swift */,
+				84200D901FAC50BA00E5471F /* Result+File.swift */,
 				84BC3BFC1FA80DA3000BDB20 /* AnyError.swift */,
 			);
 			path = Result;
@@ -393,6 +396,7 @@
 				8469B8831FA7750400B9A1A1 /* Reader.swift in Sources */,
 				8469B8721FA7125300B9A1A1 /* Optional+Alternative.swift in Sources */,
 				8469B8781FA712B500B9A1A1 /* Maybe.swift in Sources */,
+				84200D911FAC50BA00E5471F /* Result+File.swift in Sources */,
 				8459E0CC1FA6F107000283A0 /* AppDelegate.swift in Sources */,
 				84BC3BFB1FA80C6E000BDB20 /* Result.swift in Sources */,
 				8469B8611FA710AB00B9A1A1 /* Curry.swift in Sources */,
